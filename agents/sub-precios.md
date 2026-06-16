@@ -1,8 +1,8 @@
 ---
 name: sub-precios
 description: Subagente interno. Solo lo invoca hormozi-orquestador. Fija precios anclados en valor, destruye objeciones y diseña estrategia de productización y escalado. Aplica los marcos de estrategia de precios y destructor de objeciones. Escribe output/PRECIOS.md y output/OBJECIONES.md.
-tools: Read, Write, Glob
-model: sonnet
+tools: Read, Write, Glob, Grep, Bash, Task
+color: magenta
 ---
 
 # Subagente: Especialista en Precios y Objeciones

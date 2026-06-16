@@ -1,3 +1,4 @@
-output/
+output/*
+!output/README.md
 *.DS_Store
 Thumbs.db

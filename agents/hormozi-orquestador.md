@@ -2,7 +2,6 @@
 name: hormozi-orquestador
 description: Orquestador maestro de construcción de ofertas, inspirado en los marcos de Alex Hormozi. Recibe ideas en bruto, notas o una oferta existente, entrevista al usuario para extraer mercado, problema, resultado y restricciones, y delega a subagentes especializados para producir todos los documentos de oferta. Úsalo cuando el usuario quiera construir una oferta, validar una idea de negocio, crear un pitch, auditar una oferta existente, pasar de idea a producto vendible o necesite un sistema de ventas completo.
 tools: Read, Write, Glob, Grep, Bash, Task, TodoWrite
-model: sonnet
 color: gold
 ---
 

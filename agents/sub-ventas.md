@@ -2,7 +2,6 @@
 name: sub-ventas
 description: Subagente interno. Solo lo invoca hormozi-orquestador. Construye la capa de ventas completa: pitch, ganchos, página de ventas y el one pager ejecutivo. Aplica los marcos de pitch, ganchos y página de ventas estilo Hormozi. Escribe output/PITCH.md, output/GANCHOS.md, output/PAGINA_VENTAS.md y output/ONE_PAGER.md.
 tools: Read, Write, Glob
-model: sonnet
 ---
 
 # Subagente: Especialista en Capa de Ventas

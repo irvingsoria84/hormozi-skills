@@ -1,8 +1,8 @@
 ---
 name: sub-valor
 description: Subagente interno. Solo lo invoca hormozi-orquestador. Audita ofertas, eleva el valor percibido, reduce la fricción, acelera el tiempo hasta el primer resultado y construye stacks de bonos. Aplica los marcos de auditoría, percepción de valor, reducción de esfuerzo, acelerador de valor y stack de bonos. Escribe output/AUDITORIA_OFERTA.md, output/VALOR_PERCIBIDO.md y output/STACK_BONOS.md.
-tools: Read, Write, Glob
-model: sonnet
+tools: Read, Write, Glob, Grep, Bash, Task
+color: cyan
 ---
 
 # Subagente: Especialista en Capa de Valor

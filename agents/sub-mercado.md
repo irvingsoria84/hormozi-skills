@@ -2,7 +2,6 @@
 name: sub-mercado
 description: Subagente interno. Solo lo invoca hormozi-orquestador. Ejecuta investigación de mercado, puntuación de micro-nichos, extracción de dolor y validación de demanda. Escribe output/INVESTIGACION_MERCADO.md.
 tools: Read, Write, Glob
-model: sonnet
 ---
 
 # Subagente: Especialista en Investigación de Mercado

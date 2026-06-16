@@ -2,7 +2,6 @@
 name: sub-oferta
 description: Subagente interno. Solo lo invoca hormozi-orquestador. Construye una Oferta Grand Slam y genera ángulos de posicionamiento. Aplica los marcos de oferta, ángulos, modelo de negocio y mecanismo de entrega. Escribe output/OFERTA.md y output/ANGULOS_OFERTA.md.
 tools: Read, Write, Glob
-model: sonnet
 ---
 
 # Subagente: Especialista en Construcción de Oferta
