@@ -1,185 +1,124 @@
-# hormozi-skills
+# 🚀 Hormozi Skills en Español: El Motor de Ofertas Irresistibles ($100M+)
 
-**Convierte cualquier idea de negocio en una oferta completa y vendible usando los marcos de Alex Hormozi.**
+**Hormozi Skills** es una factoría automatizada de estrategia comercial y copywriting diseñada para el ecosistema hispanohablante. Permite a agentes de IA (como Claude Code o Codex) actuar como consultores de negocio de élite para estructurar, auditar y vender ofertas de alto valor basándose en la metodología de Alex Hormozi (*$100M Offers* y *$100M Leads*).
 
 ![Licencia](https://img.shields.io/badge/licencia-MIT-blue)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-blueviolet)
 ![Plataforma](https://img.shields.io/badge/plataforma-Claude%20Code%20%7C%20Codex-lightgrey)
-![Inspirado por](https://img.shields.io/badge/inspirado%20por-Alex%20Hormozi-orange)
+![Metodología](https://img.shields.io/badge/metodolog%C3%ADa-Alex%20Hormozi-orange)
 
 ---
 
-> Biblioteca de habilidades para agentes de IA. Descríbele tu negocio y obtén un sistema de oferta completo: investigación de mercado, estructura de oferta, precios, pitch, ganchos, página de ventas y un resumen ejecutivo, todo escrito en archivos en una sola sesión.
+## 💡 ¿Por qué esta versión es única?
+
+Este repositorio no es una simple traducción literal. Se ha rediseñado desde cero con un enfoque de alto impacto para el mercado hispano:
+
+*   **Adaptación Cultural y Lingüística:** Redacción fluida, natural y persuasiva en español, ideal para conectar con clientes en Latinoamérica y España.
+*   **Regla de Redacción Limpia (Sin Em-Dashes):** Los agentes tienen prohibido usar guiones largos (`—`). Los documentos generados utilizan una puntuación clásica y elegante (comas, dos puntos, punto y coma) para garantizar una lectura profesional y limpia.
+*   **Estructura Optimizada (12 Habilidades):** Las 17 habilidades del repositorio original se han consolidado en **12 módulos estratégicos** más densos y sin redundancias.
+*   **El "One Pager" de Cierre:** Incluye un 13.º documento de salida que funciona como un resumen ejecutivo ultra condensado de toda tu estrategia comercial.
 
 ---
 
-## El Problema
+## ⚡ Inicio Rápido (Instalación)
 
-Construir una oferta convincente es difícil. La mayoría de fundadores, coaches y consultores:
+Puedes utilizar este sistema directamente en tus herramientas de IA favoritas o de forma local.
 
-- Escriben ofertas vagas que no convierten: *"Ayudo a las personas a hacer crecer su negocio"*
-- Ponen precios incorrectos: demasiado bajos para ser tomados en serio o demasiado altos sin justificación
-- Omiten la capa de ventas: sin ganchos, sin pitch, sin copy de página de ventas
-
-**hormozi-skills** resuelve esto de extremo a extremo. Un orquestador, cinco subagentes especializados, 12 habilidades, 13 archivos de salida.
-
----
-
-## Inicio Rápido
-
-### Claude Code
-
-Agrega el marketplace e instala el plugin:
+### Opción A: Claude Code
+Para integrar estas habilidades y agentes en tu CLI de Claude Code, añade el marketplace e instala el plugin:
 
 ```bash
 /plugin marketplace add irvingsoria84/hormozi-skills
 /plugin install hormozi-skills@hormozi-skills
 ```
 
-Luego invoca el agente orquestador o una habilidad específica:
-
+Una vez instalado, reinicia Claude Code e inicia el orquestador principal escribiendo:
 ```bash
 hormozi-orquestador
 ```
 
-### Codex
-
-Instala directamente desde GitHub:
+### Opción B: Codex
+Si utilizas Codex, puedes instalar el plugin directamente desde GitHub:
 
 ```bash
 codex plugin install https://github.com/irvingsoria84/hormozi-skills
 ```
 
-### Instalación Manual
-
-Si prefieres los archivos de habilidades sin el flujo de plugin:
+### Opción C: Instalación Manual
+Si prefieres usar los prompts y guías de agentes sin el flujo de plugins, clona la biblioteca y cópiala a tu configuración de Claude:
 
 ```bash
-# Clona la biblioteca
+# Clona el proyecto
 git clone https://github.com/irvingsoria84/hormozi-skills
 cd hormozi-skills
 
-# Copia habilidades y agentes a tu configuración de Claude
+# Copia los agentes y habilidades a tu directorio local de Claude
 cp -r skills/ agents/ ~/.claude/
 ```
 
-> [!TIP]
-> Describe tu negocio en lenguaje natural: una idea en borrador, un brain dump o tu oferta actual. El orquestador te entrevista, detecta tu etapa y construye todo desde ahí.
-
 ---
 
-## Lo Que Obtienes
+## 🛠️ Arquitectura del Sistema
 
-13 archivos de salida escritos en `output/` en una sola sesión:
+El proyecto está estructurado bajo un modelo de **dos capas**:
 
-| Archivo | Contenido |
-|---------|-----------|
-| `INVESTIGACION_MERCADO.md` | Nicho validado, mapa de dolores, señales de demanda |
-| `OFERTA.md` | Oferta Grand Slam completa: avatar, obstáculos, mapa de soluciones, value stack |
-| `ANGULOS_OFERTA.md` | 6 a 8 ángulos de posicionamiento, ordenados por potencia |
-| `AUDITORIA_OFERTA.md` | Puntuación por dimensión y correcciones prioritarias |
-| `VALOR_PERCIBIDO.md` | Naming mejorado, empaquetado, encuadre y percepción de valor |
-| `STACK_BONOS.md` | Estructura de bonos que destruye objeciones con valor percibido |
-| `PRECIOS.md` | Precio anclado en valor, niveles, historia de justificación |
-| `OBJECIONES.md` | Creencias ocultas, cambios de creencia, respuestas listas para usar |
-| `PITCH.md` | Versiones corta, media y larga del pitch |
-| `GANCHOS.md` | 30 o más ganchos en 8 tipos, ordenados por impacto |
-| `PAGINA_VENTAS.md` | Copy completo de página de ventas, sección por sección |
-| `ONE_PAGER.md` | Resumen ejecutivo ultra condensado de toda la estrategia comercial |
-
----
-
-## Biblioteca de Habilidades
-
-Usa cualquier habilidad de forma independiente, sin necesitar el orquestador:
-
-| Habilidad | Propósito | Output |
-|-----------|-----------|--------|
-| `mercado-objetivo` | Valida tu nicho y extrae dolor real del mercado | INVESTIGACION_MERCADO.md |
-| `oferta-gran-slam` | Construye una oferta Grand Slam desde cualquier idea | OFERTA.md |
-| `angulos-de-oferta` | Genera ángulos de posicionamiento y modelo de negocio | ANGULOS_OFERTA.md |
-| `auditoria-oferta` | Audita y puntúa una oferta existente | AUDITORIA_OFERTA.md |
-| `valor-percibido` | Aumenta la percepción de valor, reduce fricción | VALOR_PERCIBIDO.md |
-| `stack-de-bonos` | Diseña bonos que eliminan objeciones | STACK_BONOS.md |
-| `estrategia-precios` | Fija precios anclados en valor con justificación | PRECIOS.md |
-| `destructor-objeciones` | Identifica y destruye objeciones clave | OBJECIONES.md |
-| `mecanismo-entrega` | Elige el modelo de entrega y escala | ENTREGA.md |
-| `pitch-hormozi` | Escribe pitch de ventas en 3 versiones | PITCH.md |
-| `ganchos-hormozi` | Genera ganchos de alto impacto para contenido y anuncios | GANCHOS.md |
-| `pagina-ventas` | Escribe el copy completo de tu página de ventas | PAGINA_VENTAS.md |
-
-> [!TIP]
-> Omite el orquestador y llama cualquier habilidad directamente: `/auditoria-oferta`, `/estrategia-precios`, `/pagina-ventas`. Cada una funciona sola sin contexto previo.
-
----
-
-## Sistema de Agentes
+### 1. El Orquestador y los Subagentes
+El punto de entrada principal es `hormozi-orquestador`. Este agente evalúa tu estado actual a través de una entrevista estructurada (una pregunta a la vez, ofreciéndote sugerencias rápidas) y delega la redacción a subagentes especialistas según tu etapa del funnel (desde una simple idea hasta un negocio que busca escalar).
 
 ```
-hormozi-orquestador
-├── sub-mercado    → INVESTIGACION_MERCADO.md
-├── sub-oferta     → OFERTA.md + ANGULOS_OFERTA.md
-├── sub-valor      → AUDITORIA_OFERTA.md + VALOR_PERCIBIDO.md + STACK_BONOS.md
-├── sub-precios    → PRECIOS.md + OBJECIONES.md
-└── sub-ventas     → PITCH.md + GANCHOS.md + PAGINA_VENTAS.md + ONE_PAGER.md
+[Usuario] ➔ hormozi-orquestador (Diagnóstico y Entrevista)
+           ├── sub-mercado ➔ INVESTIGACION_MERCADO.md
+           ├── sub-oferta  ➔ OFERTA.md + ANGULOS_OFERTA.md
+           ├── sub-valor   ➔ AUDITORIA_OFERTA.md + VALOR_PERCIBIDO.md + STACK_BONOS.md
+           ├── sub-precios ➔ PRECIOS.md + OBJECIONES.md
+           └── sub-ventas  ➔ PITCH.md + GANCHOS.md + PAGINA_VENTAS.md + ONE_PAGER.md
 ```
 
-Orden de dependencia: mercado → oferta → (valor en paralelo con precios) → ventas
-
-El orquestador detecta tu etapa del funnel (idea, oferta rota, necesita capa de ventas, escalado de servicio) y ejecuta solo los subagentes que necesitas.
-
----
-
-## Como Funciona
-
-1. **Recepción** — Dale al orquestador cualquier cosa: una idea cruda, tu oferta actual, un brain dump o una página de ventas
-2. **Entrevista** — Preguntas enfocadas, de una en una, cada una con una respuesta sugerida
-3. **Detección de etapa** — Clasifica tu situación (Etapa A a E), muestra qué subagentes se ejecutarán
-4. **Delegación** — Lanza subagentes en orden de dependencia, pasando briefs estructurados
-5. **Resumen** — Produce `output/ONE_PAGER.md`: oferta en un párrafo, decisiones clave, 3 acciones principales, mejor gancho para usar hoy
+### 2. Habilidades Independientes (Skills)
+Si no deseas ejecutar el flujo completo del orquestador, puedes llamar a cualquier habilidad de forma individual directamente en tu chat de IA (por ejemplo, `/estrategia-precios` o `/pagina-ventas`).
 
 ---
 
-## Estructura del Repositorio
+## 📂 Entregables: ¿Qué obtienes en `output/`?
 
-```
-hormozi-skills/
-├── skills/    # 12 habilidades independientes para agentes
-├── agents/    # Orquestador + 5 subagentes
-├── output/    # Documentos generados (comienza vacío)
-└── input/     # Coloca aquí tus ofertas, notas o páginas de ventas existentes
-```
+Dependiendo de tu punto de partida, el sistema generará hasta 13 documentos estratégicos en tu carpeta `output/`:
 
----
-
-## Para Quién Es Esto
-
-- Fundadores, coaches, consultores y freelancers construyendo ofertas
-- Cualquiera que aplique la metodología Hormozi y quiera ejecución con IA, no solo consejos
-- Agentes de codificación que ejecutan pipelines de generación de ofertas
-
-## Para Quién No Es
-
-- Redactores genéricos que buscan plantillas de llenar: este sistema piensa, no solo rellena
-- Desarrolladores que necesitan una biblioteca de código: esto es basado en prompts, nativo para agentes
-- Personas que quieren una respuesta única sin iteración: el orquestador te entrevista
+| Archivo Generado | Solución Estratégica | Origen |
+| :--- | :--- | :--- |
+| **`INVESTIGACION_MERCADO.md`** | Nicho validado, dolores profundos y señales reales de demanda. | `sub-mercado` / `/mercado-objetivo` |
+| **`OFERTA.md`** | Definición del avatar, mapeo de obstáculos y soluciones clave de tu Oferta Grand Slam. | `sub-oferta` / `/oferta-gran-slam` |
+| **`ANGULOS_OFERTA.md`** | 6 a 8 ángulos creativos de posicionamiento ordenados por impacto. | `sub-oferta` / `/angulos-de-oferta` |
+| **`AUDITORIA_OFERTA.md`** | Análisis crítico y puntuación detallada de la viabilidad de tu oferta actual. | `sub-valor` / `/auditoria-oferta` |
+| **`VALOR_PERCIBIDO.md`** | Ajustes de empaquetado, nomenclatura y valor percibido (Ecuación de Valor). | `sub-valor` / `/valor-percibido` |
+| **`STACK_BONOS.md`** | Estructura de bonos diseñados para eliminar la fricción de compra. | `sub-valor` / `/stack-de-bonos` |
+| **`PRECIOS.md`** | Modelos de precios anclados en valor y su correspondiente justificación psicológica. | `sub-precios` / `/estrategia-precios` |
+| **`OBJECIONES.md`** | Guía de contra-argumentación para anticipar y disolver barreras de compra. | `sub-precios` / `/destructor-objeciones` |
+| **`ENTREGA.md`** | Mapeo del mecanismo óptimo (DIY, DWY, DFY), cronograma de entrega y escalabilidad. | `/mecanismo-entrega` |
+| **`PITCH.md`** | Versiones corta, mediana y larga del discurso comercial de tu producto. | `sub-ventas` / `/pitch-hormozi` |
+| **`GANCHOS.md`** | +30 ganchos de alta conversión clasificados por tipos (curiosidad, identidad, etc.). | `sub-ventas` / `/ganchos-hormozi` |
+| **`PAGINA_VENTAS.md`** | Estructura y copy persuasivo completo para tu página de aterrizaje (landing page). | `sub-ventas` / `/pagina-ventas` |
+| **`ONE_PAGER.md`** | **Resumen Comercial Ejecutivo:** Tu oferta en un párrafo, decisiones críticas y 3 acciones inmediatas. | `sub-ventas` |
 
 ---
 
-## Marcos de Referencia
+## 🎯 ¿Para quién es esta biblioteca?
 
-Construido sobre la metodología de ofertas de Alex Hormozi de *$100M Offers* y *$100M Leads*:
-
-- Construcción de la Oferta Grand Slam
-- Ecuación de valor: resultado ideal x probabilidad percibida / retraso en el tiempo x esfuerzo y sacrificio
-- Reversión de obstáculos en soluciones
-- Ingeniería de value stack y bonos
-- Diseño de garantías (incondicional, condicional, basada en esfuerzo)
-- Anclaje de precio y valor percibido
-- Arquitectura de ganchos (interrupción de patrón, identidad, resultado, curiosidad)
+*   **Fundadores y Creadores:** Que quieren estructurar una oferta de alto valor de forma ágil y validada científicamente.
+*   **Consultores y Copywriters:** Que buscan un framework riguroso para acelerar la creación de propuestas y páginas de venta para sus clientes.
+*   **Agentes de Desarrollo e IA:** Que necesitan un conjunto modular de reglas e instrucciones de negocio (basado en prompts y libre de em-dashes) para pipelines automatizados.
 
 ---
 
-## Créditos
+## 📚 Marcos de Trabajo Hormozi Integrados
 
-Inspirado en el trabajo de Alex Hormozi. Adaptado al español para agentes de IA.
+Este sistema ejecuta en código de prompt las metodologías más famosas de Alex Hormozi:
+*   **La Ecuación del Valor:** Multiplicar el Resultado Ideal y la Probabilidad Percibida de Logro, mientras se minimiza el Tiempo de Espera y el Esfuerzo/Sacrificio del cliente.
+*   **La Oferta Grand Slam:** Cómo transformar un servicio genérico en un producto único y difícil de comparar.
+*   **Estrategias de Garantías:** Diseño de garantías incondicionales, condicionales y basadas en el esfuerzo para eliminar el riesgo del comprador.
+*   **Anclaje de Precios:** Cómo vender valor real en lugar de competir por tarifas por hora.
+
+---
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT** de código abierto. Siéntete libre de adaptarlo, integrarlo a tus plataformas y compartirlo.
