@@ -1,0 +1,8 @@
+{
+  "name": "hormozi-skills",
+  "version": "1.0.0",
+  "description": "Sistema de construcción de ofertas Grand Slam basado en los marcos de Alex Hormozi. En español.",
+  "homepage": "https://github.com/irvingsoria84/hormozi-skills",
+  "skills": "skills/",
+  "agents": "agents/"
+}
