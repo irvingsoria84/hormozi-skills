@@ -1,4 +1,4 @@
-# 🚀 Hormozi Skills en Español: El Motor de Ofertas Irresistibles ($100M+)
+# Hormozi Skills en Español: El Motor de Ofertas Irresistibles ($100M+)
 
 **Hormozi Skills** es una factoría automatizada de estrategia comercial y copywriting diseñada para el ecosistema hispanohablante. Permite a agentes de IA (como Claude Code o Codex) actuar como consultores de negocio de élite para estructurar, auditar y vender ofertas de alto valor basándose en la metodología de Alex Hormozi (*$100M Offers* y *$100M Leads*).
 
@@ -9,18 +9,18 @@
 
 ---
 
-## 💡 ¿Por qué esta versión es única?
+## ¿Por qué esta versión es única?
 
 Este repositorio no es una simple traducción literal. Se ha rediseñado desde cero con un enfoque de alto impacto para el mercado hispano:
 
-*   **Adaptación Cultural y Lingüística:** Redacción fluida, natural y persuasiva en español, ideal para conectar con clientes en Latinoamérica y España.
-*   **Regla de Redacción Limpia (Sin Em-Dashes):** Los agentes tienen prohibido usar guiones largos (`—`). Los documentos generados utilizan una puntuación clásica y elegante (comas, dos puntos, punto y coma) para garantizar una lectura profesional y limpia.
-*   **Estructura Optimizada (12 Habilidades):** Las 17 habilidades del repositorio original se han consolidado en **12 módulos estratégicos** más densos y sin redundancias.
-*   **El "One Pager" de Cierre:** Incluye un 13.º documento de salida que funciona como un resumen ejecutivo ultra condensado de toda tu estrategia comercial.
+* **Adaptación Cultural y Lingüística:** Redacción fluida, natural y persuasiva en español, ideal para conectar con clientes en Latinoamérica y España.
+* **Regla de Redacción Limpia (Sin Em-Dashes):** Los agentes tienen prohibido usar guiones largos (`—`). Los documentos generados utilizan una puntuación clásica y elegante (comas, dos puntos, punto y coma) para garantizar una lectura profesional y limpia.
+* **Estructura Optimizada (12 Habilidades):** Las 17 habilidades del repositorio original se han consolidado en **12 módulos estratégicos** más densos y sin redundancias.
+* **El "One Pager" de Cierre:** Incluye un 13.º documento de salida que funciona como un resumen ejecutivo ultra condensado de toda tu estrategia comercial.
 
 ---
 
-## ⚡ Inicio Rápido (Instalación)
+## Inicio Rápido (Instalación)
 
 Puedes utilizar este sistema directamente en tus herramientas de IA favoritas o de forma local.
 
@@ -58,7 +58,7 @@ cp -r skills/ agents/ ~/.claude/
 
 ---
 
-## 🛠️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 El proyecto está estructurado bajo un modelo de **dos capas**:
 
@@ -66,12 +66,12 @@ El proyecto está estructurado bajo un modelo de **dos capas**:
 El punto de entrada principal es `hormozi-orquestador`. Este agente evalúa tu estado actual a través de una entrevista estructurada (una pregunta a la vez, ofreciéndote sugerencias rápidas) y delega la redacción a subagentes especialistas según tu etapa del funnel (desde una simple idea hasta un negocio que busca escalar).
 
 ```
-[Usuario] ➔ hormozi-orquestador (Diagnóstico y Entrevista)
-           ├── sub-mercado ➔ INVESTIGACION_MERCADO.md
-           ├── sub-oferta  ➔ OFERTA.md + ANGULOS_OFERTA.md
-           ├── sub-valor   ➔ AUDITORIA_OFERTA.md + VALOR_PERCIBIDO.md + STACK_BONOS.md
-           ├── sub-precios ➔ PRECIOS.md + OBJECIONES.md
-           └── sub-ventas  ➔ PITCH.md + GANCHOS.md + PAGINA_VENTAS.md + ONE_PAGER.md
+[Usuario] hormozi-orquestador (Diagnóstico y Entrevista)
+ ├── sub-mercado INVESTIGACION_MERCADO.md
+ ├── sub-oferta OFERTA.md + ANGULOS_OFERTA.md
+ ├── sub-valor AUDITORIA_OFERTA.md + VALOR_PERCIBIDO.md + STACK_BONOS.md
+ ├── sub-precios PRECIOS.md + OBJECIONES.md
+ └── sub-ventas PITCH.md + GANCHOS.md + PAGINA_VENTAS.md + ONE_PAGER.md
 ```
 
 ### 2. Habilidades Independientes (Skills)
@@ -79,7 +79,7 @@ Si no deseas ejecutar el flujo completo del orquestador, puedes llamar a cualqui
 
 ---
 
-## 📂 Entregables: ¿Qué obtienes en `output/`?
+## Entregables: ¿Qué obtienes en `output/`?
 
 Dependiendo de tu punto de partida, el sistema generará hasta 13 documentos estratégicos en tu carpeta `output/`:
 
@@ -101,24 +101,24 @@ Dependiendo de tu punto de partida, el sistema generará hasta 13 documentos est
 
 ---
 
-## 🎯 ¿Para quién es esta biblioteca?
+## ¿Para quién es esta biblioteca?
 
-*   **Fundadores y Creadores:** Que quieren estructurar una oferta de alto valor de forma ágil y validada científicamente.
-*   **Consultores y Copywriters:** Que buscan un framework riguroso para acelerar la creación de propuestas y páginas de venta para sus clientes.
-*   **Agentes de Desarrollo e IA:** Que necesitan un conjunto modular de reglas e instrucciones de negocio (basado en prompts y libre de em-dashes) para pipelines automatizados.
+* **Fundadores y Creadores:** Que quieren estructurar una oferta de alto valor de forma ágil y validada científicamente.
+* **Consultores y Copywriters:** Que buscan un framework riguroso para acelerar la creación de propuestas y páginas de venta para sus clientes.
+* **Agentes de Desarrollo e IA:** Que necesitan un conjunto modular de reglas e instrucciones de negocio (basado en prompts y libre de em-dashes) para pipelines automatizados.
 
 ---
 
-## 📚 Marcos de Trabajo Hormozi Integrados
+## Marcos de Trabajo Hormozi Integrados
 
 Este sistema ejecuta en código de prompt las metodologías más famosas de Alex Hormozi:
-*   **La Ecuación del Valor:** Multiplicar el Resultado Ideal y la Probabilidad Percibida de Logro, mientras se minimiza el Tiempo de Espera y el Esfuerzo/Sacrificio del cliente.
-*   **La Oferta Grand Slam:** Cómo transformar un servicio genérico en un producto único y difícil de comparar.
-*   **Estrategias de Garantías:** Diseño de garantías incondicionales, condicionales y basadas en el esfuerzo para eliminar el riesgo del comprador.
-*   **Anclaje de Precios:** Cómo vender valor real en lugar de competir por tarifas por hora.
+* **La Ecuación del Valor:** Multiplicar el Resultado Ideal y la Probabilidad Percibida de Logro, mientras se minimiza el Tiempo de Espera y el Esfuerzo/Sacrificio del cliente.
+* **La Oferta Grand Slam:** Cómo transformar un servicio genérico en un producto único y difícil de comparar.
+* **Estrategias de Garantías:** Diseño de garantías incondicionales, condicionales y basadas en el esfuerzo para eliminar el riesgo del comprador.
+* **Anclaje de Precios:** Cómo vender valor real en lugar de competir por tarifas por hora.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto se distribuye bajo la licencia **MIT** de código abierto. Siéntete libre de adaptarlo, integrarlo a tus plataformas y compartirlo.
