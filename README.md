@@ -9,13 +9,13 @@
 
 ---
 
-## ¿Por qué esta versión es única?
+## Características Principales del Sistema
 
-Este repositorio no es una simple traducción literal. Se ha rediseñado desde cero con un enfoque de alto impacto para el mercado hispano:
+Este repositorio ofrece una biblioteca robusta y optimizada de agentes y habilidades diseñados para construir estrategias de negocio de alto impacto:
 
-* **Adaptación Cultural y Lingüística:** Redacción fluida, natural y persuasiva en español, ideal para conectar con clientes en Latinoamérica y España.
-* **Regla de Redacción Limpia (Sin Em-Dashes):** Los agentes tienen prohibido usar guiones largos (`—`). Los documentos generados utilizan una puntuación clásica y elegante (comas, dos puntos, punto y coma) para garantizar una lectura profesional y limpia.
-* **Estructura Optimizada (12 Habilidades):** Las 17 habilidades del repositorio original se han consolidado en **12 módulos estratégicos** más densos y sin redundancias.
+* **Enfoque Nativo en Español:** Redacción fluida, natural y persuasiva, ideal para conectar con audiencias y mercados en Latinoamérica y España.
+* **Regla de Redacción Limpia (Sin Guiones Largos):** Los agentes generan documentos con puntuación clásica y profesional (evitando el uso de guiones largos), asegurando una lectura fluida y de alta calidad ejecutiva.
+* **Estructura Estratégica en 12 Módulos:** El flujo comercial se organiza en **12 módulos de trabajo densos** y enfocados que abarcan desde el diagnóstico de mercado hasta la venta, eliminando redundancias para agilizar el desarrollo de la estrategia.
 * **El "One Pager" de Cierre:** Incluye un 13.º documento de salida que funciona como un resumen ejecutivo ultra condensado de toda tu estrategia comercial.
 
 ---
